@@ -142,7 +142,7 @@ The `-s` argument enables VT switching in cage (0.1.2 and newer only), which is 
 The `-mlast` argument tells Cage to use the last-connected monitor only, which is useful since ReGreet is a single-monitor application.
 
 If using Sway, create a Sway config file (in a path such as `/etc/greetd/sway-config`) as follows:
-```conf
+```ini
 exec "regreet; swaymsg exit"
 include /etc/sway/config.d/*
 ```
@@ -155,7 +155,7 @@ user = "greeter"
 ```
 
 If using Hyprland, create a Hyprland config file (in a path such as `/etc/greetd/hyprland.conf`) as follows:
-```
+```ini
 exec-once = regreet; hyprctl dispatch exit
 misc {
     disable_hyprland_logo = true
@@ -187,7 +187,7 @@ command = "env GTK_USE_PORTAL=0 GDK_DEBUG=no-portals cage -s -mlast -- regreet"
 ```
 
 If using Hyprland, you can instead append the following lines to the Hyprland config for ReGreet:
-```
+```ini
 env = GTK_USE_PORTAL,0
 env = GDK_DEBUG,no-portals
 ```
