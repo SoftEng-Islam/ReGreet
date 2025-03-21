@@ -142,7 +142,7 @@ The `-s` argument enables VT switching in cage (0.1.2 and newer only), which is 
 The `-mlast` argument tells Cage to use the last-connected monitor only, which is useful since ReGreet is a single-monitor application.
 
 If using Sway, create a Sway config file (in a path such as `/etc/greetd/sway-config`) as follows:
-```
+```conf
 exec "regreet; swaymsg exit"
 include /etc/sway/config.d/*
 ```
